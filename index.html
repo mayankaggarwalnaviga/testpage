@@ -26,20 +26,4 @@
 <!-- PropellerAds Ad Code -->
  
 </body>
-         <script>
-        // Check if Service Workers are supported
-        if ('serviceWorker' in navigator) {
-            // Register sw.js from the root of your repository
-            // Adjust path if your repo is a project page (e.g., '/repo-name/sw.js')
-            navigator.serviceWorker.register('/testpage/sw.js')
-                .then(registration => {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-        } else {
-            console.log('Service Workers are not supported in this browser.');
-        }
-    </script>
 </html>
