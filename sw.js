@@ -1,4 +1,5 @@
 // sw.js
+debugger;
 self.options = {
     "domain": "3nbf4.com",
     "zoneId": 10773016
