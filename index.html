@@ -2,8 +2,6 @@
 <html>
 <head>
 <meta name="monetag" content="958dff80d6c39572db2887cb8d6063a7">
-<script src="https://pl28969495.profitablecpmratenetwork.com/ea/40/be/ea40be7b0b103484e1bf7f3936eae7d6.js">
-      </script>
     <title>My Test Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,10 +21,24 @@
 <p>This website is created for testing PropellerAds integration.</p>
  
 <button onclick="showAlert()">Click Me</button>
-    <script async="async" data-cfasync="false" src="https://pl28971706.profitablecpmratenetwork.com/54e09a2133cc9dff30b5248cf5e1b409/invoke.js">
 <div id="container-54e09a2133cc9dff30b5248cf5e1b409"></div>
 <!-- PropellerAds Ad Code -->
  
 </body>
-       
+         <script>
+        // Check if Service Workers are supported
+        if ('serviceWorker' in navigator) {
+            // Register sw.js from the root of your repository
+            // Adjust path if your repo is a project page (e.g., '/repo-name/sw.js')
+            navigator.serviceWorker.register('/testpage/sw.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        } else {
+            console.log('Service Workers are not supported in this browser.');
+        }
+    </script>
 </html>
